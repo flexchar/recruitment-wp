@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "node-sass resources/scss/app.scss public/css/app.css"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
