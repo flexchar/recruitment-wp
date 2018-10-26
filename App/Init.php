@@ -9,6 +9,7 @@ namespace App;
 use App\Modules\Admin;
 use App\Modules\FormData;
 use App\Modules\Shortcode;
+use App\Methods\DatabaseApi;
 
 
 final class Init
@@ -29,6 +30,7 @@ final class Init
     public static function getServices()
     {
         return [
+            DatabaseApi::class,
             Admin::class,
             FormData::class,
             Shortcode::class,
