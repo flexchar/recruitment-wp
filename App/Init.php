@@ -8,6 +8,7 @@ namespace App;
 
 use App\Modules\Admin;
 use App\Modules\FormData;
+use App\Modules\Shortcode;
 
 
 final class Init
@@ -30,6 +31,7 @@ final class Init
         return [
             Admin::class,
             FormData::class,
+            Shortcode::class,
         ];
     }
 

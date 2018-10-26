@@ -1,0 +1,29 @@
+.employees-grid {
+  --nameColor: #000000;
+  --positionColor: #999999;
+  --linkColor: #4a90e2;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  grid-auto-flow: dense; }
+  .employees-grid .grid-element p {
+    margin: 0;
+    padding: 0; }
+  .employees-grid .grid-element .name {
+    color: var(--nameColor); }
+  .employees-grid .grid-element .occupation {
+    color: var(--positionColor); }
+  .employees-grid .grid-element a {
+    box-shadow: none;
+    color: var(--linkColor);
+    text-decoration-color: var(--linkColor);
+    text-decoration: underline; }
+
+@media (max-width: 1224px) {
+  .employees-grid {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 480px) {
+  .employees-grid {
+    grid-template-columns: 1fr; } }
