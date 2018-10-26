@@ -27,7 +27,3 @@ spl_autoload_register(function ($class) {
 if (class_exists(App\Init::class)) {
     new App\Init();
 }
-
-// On remove event, remove table
-register_uninstall_hook(__FILE__, \App\Methods\DatabaseApi::dropTable());
-

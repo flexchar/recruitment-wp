@@ -104,16 +104,4 @@ class DatabaseApi extends BaseController
         require_once(ABSPATH . '/wp-admin/includes/upgrade.php');
         dbDelta($sql);
     }
-
-    /**
-     * Drops plugin table
-     */
-    public static function dropTable()
-    {
-        global $wpdb;
-
-        if (!self::getInstance()->tableExists()) return;
-        // Drop
-        $wpdb->query('DROP TABLE IF EXISTS ' . parent::TABLE_NAME);
-    }
 }
